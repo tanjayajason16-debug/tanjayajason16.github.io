@@ -1,0 +1,240 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== Header / Navbar ===== */
+header {
+  background: #13487a; /* Roblox-like red */
+  color: #fff;
+  padding: 1rem 0;
+}
+
+nav {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+nav img.logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffe66d;
+}
+
+/* ===== Main Content ===== */
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.hero {
+  background: url('../images/roblox-bg.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 5rem 1rem;
+  border-radius: 12px;
+}
+
+/* Extra spacing between major sections */
+.hero {
+  margin-bottom: 3rem;  /* space below the welcome section */
+}
+
+section h2 {
+  margin-top: 2rem;     /* space above each section heading */
+  margin-bottom: 1rem;  /* space below the heading */
+}
+
+section p {
+  margin-bottom: 2rem;  /* space below the intro paragraph */
+}
+
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.game {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.game img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.game {
+  display: block;                 /* ensure <a> acts like a block */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;          /* remove underline */
+  color: inherit;                 /* keep text color */
+  transition: transform 0.2s;
+}
+
+.game:hover {
+  transform: translateY(-4px);    /* subtle lift on hover */
+}
+
+
+.tips-list {
+  margin-top: 1rem;
+  list-style: disc inside;
+}
+.tips-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Contact page layout */
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-form, .contact-info {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form h2, .contact-info h2 {
+  margin-bottom: 1rem;
+  color: #13487a;
+}
+
+/* Form inputs */
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 1.5rem;
+  background: #13487a;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #0f3b63;
+}
+
+/* Contact info styling */
+.contact-info ul {
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+  color: #13487a;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  background: #13487a;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0f3b63;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+footer a {
+  color: #ff4757;
+  text-decoration: none;
+}
